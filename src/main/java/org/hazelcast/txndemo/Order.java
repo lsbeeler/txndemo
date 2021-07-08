@@ -8,7 +8,7 @@ public class Order implements Serializable
 {
     private final long id;
     private final String destinationAddress;
-    private final List<OrderLine> lines;
+    private final transient List<OrderLine> lines;
 
     public Order(long id, String destinationAddress)
     {
